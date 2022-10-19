@@ -4,22 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <title>Cookbook App</title>
 </head>
 <body class="container">
     <div id="new-cookbook" class="jumbotron">
-        <h2>New Cookbook</h2>
-        <input type="text" id="new-cookbook-name" class="form-control"> <br>
-        <buttton id="create-new-cookbook" class="btn btn-primary">Create</buttton>
+        <h2 class="text-center">Your Virtual Cookbooks</h2>
+        <input type="text" id="new-cookbook-name" class="form-control" Placeholder="Name Your Cookbook!"> <br>
+        <buttton id="new-cookbook-btn" class="btn btn-success form-control">Create Cookbook</buttton><br><br>
     </div>
 
     <div id="app">
 
     </div>
+    <!-- <div class="accordion" id="list-of-recipes">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Ground Beef Casserole
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                
+                  <div class="card" style="width: 100;">
+                    <div class="card-body">
+                      <h5 class="card-title">Ingredients</h5>
+                      <ul>
+                        <li>1 lb lean ground beef</li>
+                        <li>1 cup diced onion
+                        <li>1/2 cup diced orange bell pepper
+                        <li>1/4 teaspoon red pepper flakes
+                        <li>1 teaspoon Montreal Steak seasoning or Magic Dust seasoning (see recipe below)
+                        <li>16 oz. tomato sauce
+                        <li>10 oz can of Red Gold Diced Tomatoes & Green Chiles
+                        <li>1 1/2 tsp dried oregano
+                        <li> 2 tsp chili powder
+                        <li>  2 cups frozen corn
+                        <li>  2 ounces shredded Mexican 4 Cheese blend
+                        <li>  1 1/2 cups dried macaroni style pasta cooked al dente
+                        <li> 1 cup shredded Mexican 4 Cheese blend
+                        <li>sliced green onions for garnish</li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+              <ol>
+                <li>Prepare the casserole according to the instructions in the printable version below – do not add the onions to the top as they are for garnish when you serve it.</li>
+                <li>Cool the dish completely after cooking.</li>
+                <li>Wrap tightly in plastic wrap to avoid freezer burn.</li>
+                <li>Wrap in foil then label and date it.</li>
+                <li> ready to bake, preheat oven to 375 F and remove foil so you can take off the plastic wrap from frozen dish. Put the foil back on and bake (casserole will still be frozen) for about an hour. Check for doneness, continue for another 15 minutes if needed. If you defrosted the casserole, reheat for 35-45 minutes.</li>
+              </ol>
+              <p><i>Tip:</i> If you don’t want your baking pan in the freezer for three months, after the dish has cooled completely line another baking dish with 2-3 layers of plastic wrap leaving extra hanging over the sides. Place the cooled casserole into the lined pan and freeze. Once frozen lift the dish out with the plastic wrap. Remove the plastic wrap and transfer the frozen item to a freezer safe bag. When you’re ready to bake it, simply remove from the bag and place it into a baking dish.</p>
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <button class="btn btn-success" type="button">Edit Recipe</button>
+              <button class="btn btn-danger" type="button">Delete Recipe</button><br>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- BEGIN EDIT RECIPE MODAL-->
+      <div class="modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END EDIT MODAL-->
+
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
 <script src="script.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
-
-
-    
 </body>
 </html>
